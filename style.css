@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background:  radial-gradient(circle,#ffffff, #fbfbfb);
+}
+
+.divisas{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    background: #e1e1e1;
+    height: 30px;
+    font-weight: bold;
+    position: relative;
+    border: 1px solid black;
+}
+
+.currency{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 128px;
+  margin-top: 30px;
+  height: 110px;
+  width: 260px;
+  padding: 15px;
+  background: #f5f5f6;
+  z-index: 1;
+  border: 1px black solid;
+}
+
+.currency p{
+    color: black;
+}
+
+.drop{
+
+    width: 30%;
+}
+
+.drop:hover .currency{
+    display: block;
+}
+
+
+.div-main_container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;    
+}
+
+.about{
+    display: none;
+    position: absolute;
+    height: 150px;
+    width: 180px;
+    padding: 7px;
+    border: 1px black solid;
+    
+}
+
+.about.active{
+    display: block;
+    background: #ffffff;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.about  li {
+    margin: 10px;
+}
+
+table, tr{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+} 
+.nav-main{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    background: #ffc04d;
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+
+.icon{
+    width: 10%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-main_container{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+    margin-top: 5px;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-main_container p:hover{
+    color:white;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    user-select: none;
+}
+
+.div-nav{
+    height: 40px;
+    padding: 10px;  
+    position: relative;
+    background: #ffb734;
+    border-bottom: 1px solid black;
+}
+
+.cuentas, .tarjetas, .prestamos, .inversiones, .seguros{
+    position: absolute;
+    display: none; 
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+    padding: 10px 0;
+    right: 0;
+    left: 0;    
+}
+
+.cuentas.active,  .tarjetas.active, .prestamos.active, .inversiones.active, .seguros.active{
+    display: flex;
+    background: #ffd281;
+    border: 1px black solid;
+}
+
+.nav-ul:not(:last-child){
+    
+    margin-right: 20px;
+    border-right: 1px solid ;
+   
+}
+
+.nav-ul{
+   
+    width: calc(100%/5);
+}
+
+.nav-ul li{
+    margin: 5px;
+}
+
+.nav-ul > b{
+   width: 90%;
+   display: block;
+   text-align: center;
+
+}
+
+ul p{
+
+    margin-bottom: 10px;
+}
+
+li div{
+    justify-content: space-around;
+    
+}
+
+a {
+    color:black;
+    
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+.nav-main a{
+    font-weight: bold;
+} 
